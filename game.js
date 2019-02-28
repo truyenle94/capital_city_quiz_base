@@ -27,7 +27,7 @@ submitButton.addEventListener('click',function () {
             let capital = issData[1][0].capitalCity
             console.log(capital)
             if (userAnswer === capital){
-                resultTextElement.innerHTML=`Correct! The capital of `
+                resultTextElement.innerHTML=`Correct! The capital of ${randomElement.name} is ${capital}`
             }
             else{
                 resultTextElement.innerHTML=`Wrong - the capital of ${randomElement.name} is not ${userAnswer}, it is ${capital}`
